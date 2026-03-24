@@ -1,0 +1,62 @@
+/* ==================== Sidebar ==================== */
+#sidebar-wrapper {
+    position: fixed;       /* keeps sidebar always visible */
+    top: 0;
+    left: 0;
+    height: 100vh;         /* full viewport height */
+    width: 250px;          /* adjust width if needed */
+    background-color: #0f172a;
+    color: #fff;
+    overflow-y: auto;      /* scroll only inside sidebar if too long */
+    padding-top: 60px;     /* space for heading/logo */
+    z-index: 1000;         /* stay on top */
+}
+
+/* Sidebar links */
+#sidebar-wrapper .list-group-item {
+    color: #fff;
+    border: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+#sidebar-wrapper .list-group-item:hover,
+#sidebar-wrapper .list-group-item.active {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ==================== Main Content ==================== */
+#page-content-wrapper {
+    margin-left: 250px; /* leave space for fixed sidebar */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        left: -250px;       /* hide sidebar */
+        transition: all 0.3s;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        left: 0;            /* show sidebar when toggled */
+    }
+
+    #page-content-wrapper {
+        margin-left: 0;     /* content takes full width */
+    }
+}
+
+#sidebar-wrapper .list-group-item.active {
+    background-color: #1d4ed8; /* blue for active */
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Fix sidebar heading drop on dashboard only */
+body.dashboard #sidebar-wrapper .sidebar-heading {
+    margin-top: 0 !important;
+    padding-top: 15px; /* match other pages */
+}
+

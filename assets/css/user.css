@@ -1,0 +1,159 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    color: #070707;
+
+    background-color: #ffffff ;
+}
+
+
+.navbar {
+    background-color: #09305e !important; 
+}
+
+.btn-primary {
+    background-color: #424040;
+    border-color: #0a0a0a;
+}
+
+.custom-footer {
+    background-color: #09305e; 
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.custom-footer p {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.navbar .nav-link {
+    margin-left: 15px;
+}
+
+.jumbotron {
+    background: #e9ecef;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+
+.home-section {
+  height: 100vh;
+  background: url('../assets/images/home.jpeg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #000000;
+  background-color: #ffffff  ;
+}
+
+
+.home-text {
+  position: relative;
+  z-index: 2;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home-text .btn-lg {
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+
+.home-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home-text p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.home-text .btn-lg {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+.home-image {
+    height: 90vh;
+    background: url('../assets/images/home.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image {
+        width: 300%;
+        height: 50vh;
+        margin-top: 20px;
+    }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #4fd118;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.about-card {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
